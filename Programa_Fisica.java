@@ -12,7 +12,7 @@ public class Programa_Fisica {
 
         //*Mensajes de bienvenida */
         JOptionPane.showMessageDialog(null,"Bienvenido al programa");
-        JOptionPane.showMessageDialog(null,"Este programa se ha diseñado para calular la altura maxima y la velocidad inicial en un disparo parabolico.\n Para indicar un decimal utilice (.)");
+        JOptionPane.showMessageDialog(null,"Este programa se ha diseñado para calular la altura maxima y la velocidad inicial en un disparo parabolico.\n Para indicar un decimal utilice (.)\n Utilice los estandares de medida internacional");
         decision = Integer.parseInt(JOptionPane.showInputDialog("Presione: \n  1.Para realizar un calculo \n 2. Para cerrar el programa")); 
 
 
@@ -42,8 +42,8 @@ public class Programa_Fisica {
                 alturaMax = altura + ((Math.pow(velInicial, 2) * Math.pow(Math.sin(convRad), 2)) / (2 * aceleracion));
 
                 JOptionPane.showMessageDialog(null, "La velocidad con la que es disparado es de aproximadamente " + 
-                String.format("%.3f", velInicial) + "\nLa altura maxima que alcanza el proyectil es de aprocimadamente : " + 
-                String.format("%.3f", alturaMax));
+                String.format("%.3f", velInicial) + " m/s" + "\nLa altura maxima que alcanza el proyectil es de aproximadamente : " + 
+                String.format("%.3f", alturaMax) + " metros");
                 //*Fin calculos */
                 
                 //*Variable del ciclo */
